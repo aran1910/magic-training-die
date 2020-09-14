@@ -1,6 +1,8 @@
 --if you fucking skid of off this shit i will fucking murder you you god damn piece of shit
 --and you will get harrassed if you do skid
 
+--Gui Converted Using Gui-To-Lua
+
 local ScreenGui = Instance.new("ScreenGui")
 local Loading = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
@@ -36,6 +38,7 @@ local TextButton_17 = Instance.new("TextButton")
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
 
 Loading.Name = "Loading"
 Loading.Parent = ScreenGui
@@ -659,3 +662,4 @@ local function HMJYY_fake_script() -- Main.LocalScript
 	script.Parent.Draggable = true
 end
 coroutine.wrap(HMJYY_fake_script)()
+
